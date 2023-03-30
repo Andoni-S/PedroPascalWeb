@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PedroPascal>
+<awards>
+     <award id="A1">
+        <name> Gold Derby Awards </name>
+        <category> Drama Guest Actor</category>
+        <year> 2014 </year>
+        <production id="S4"> Game of Thrones </production>
+        <won/> 
+    </award>
+    <award id="A2">
+        <name> NewNowNext Awards </name>
+        <category> Best New Television Actor </category>
+        <year> 2014 </year>
+        <production id="S4"> Game of Thrones </production>
+
+        <nominated/>
+    </award>
+     <award id="A3">
+        <name> Online Film and Television Association </name>
+        <category> Best Guest Actor in a Drama Series</category>
+        <year> 2014 </year>
+        <production id="S4"> Game of Thrones </production>
+        <nominated/>
+    </award>
+     <award id="A4">
+        <name> Screen Actors Guild Awards</name>
+        <category> Outstanding Performance by an Ensemble in a Drama Series </category>
+        <year> 2015 </year>
+        <production id="S4"> Game of Thrones </production>
+        <nominated/>
+    </award>
+     <award id="A5">
+        <name> Imagen Foundation Awards</name>
+        <category> Best Actor - Television </category>
+        <year> 2016 </year>
+        <production id="S3"> Narcos </production>
+        <nominated/>
+    </award>
+    <award id="A6">
+        <name> Gold Derby Awards </name>
+        <category> Drama Guest Actor of the Decade</category>
+        <year> 2019 </year>
+        <production id="S4"> Game of Thrones </production>
+        <won/>
+    </award>
+    <award id="A7">
+        <name> Pena de Prata</name>
+        <category> Best Actor in a Drama Series</category>
+        <year> 2020 </year>
+        <production id="S2"> The Mandalorian </production>
+        <nominated/>
+    </award>
+    <award id="A8">
+        <name> CinEuphoria </name>
+        <category> Merit - Honorary Award</category>
+        <year> 2020 </year>
+        <production id="S4"> Game of Thrones </production>
+        <won/>
+    </award>
+    <award id="A9">
+        <name> MTV Movie + TV Awards </name>
+        <category> Best Hero </category>
+        <year> 2021 </year>
+        <production id="S2"> The Mandalorian </production>
+        <nominated/>
+    </award>
+    <award id="A10">
+        <name> MTV Movie + TV Awards </name>
+        <category> Best Duo </category>
+        <year> 2021 </year>
+        <production id="S2"> The Mandalorian </production>
+        <nominated/>
+    </award>
+     <award id="A11">
+        <name> Hollywood Critics Association Television Awards</name>
+        <category> Best Actor in a Streaming Series, Drama</category>
+        <year> 2021 </year>
+        <production id="S2"> The Mandalorian </production>
+        <nominated/>
+    </award>
+    <award id="A12">
+        <name> Critics Choice Super Awards </name>
+        <category> Best Actor in a Science Fiction/Fantasy Series </category>
+        <year> 2021 </year>
+        <production id="S2"> The Mandalorian </production>
+        <nominated/>
+    </award>
+</awards>
+<series>
+    <serie id="S1">
+        <title >The Last of Us</title>
+        <duration yearStart="2023"></duration>
+        <genre>Apocalyptic</genre>
+        <seasons>1</seasons>
+        <createdBy>Craig Mazin</createdBy>
+        <createdBy>Neil Druckmann</createdBy>
+        <character>Joel</character>
+        <poster path="PPW\MEDIA\tlou.jpg"/>
+    </serie>
+    <serie id="S2">
+        <title>The Mandalorian</title>
+        <duration yearStart="2019"></duration>
+        <genre>Space Western</genre>
+        <seasons>3</seasons>
+        <createdBy>Jon Favreau</createdBy>
+        <createdBy>Dave Filoni</createdBy>
+        <createdBy>Rick Famuyiwa</createdBy>
+        <createdBy>George Lucas</createdBy>
+        <createdBy>Christofer Yost</createdBy>
+        <character>The Mandalorian(Din Djarin)</character>
+        <poster path="PPW\MEDIA\mandalorian.jpg"/>
+        <awards>
+            <award id="A7"/>
+            <award id="A9"/>
+            <award id="A10"/>
+            <award id="A11"/>
+            <award id="A12"/>
+        </awards>
+    </serie>
+    <serie id="S3">
+        <title>Narcos</title>
+        <duration yearStart="2015" yearEnd="2017">2</duration>
+        <genre>Crime drama</genre>
+        <seasons>3</seasons>
+        <createdBy>Chris Brancato</createdBy>
+        <createdBy>Eric Newman</createdBy>
+        <createdBy>Carlo Bernard</createdBy>
+        <character>Javier F. Pe&#241;a</character>
+        <poster path="PPW\MEDIA\narcos.jpg"/>
+        <awards>
+            <award id="A5"/>
+        </awards>
+    </serie>
+    <serie id="S4">
+        <title>Game of Thrones</title>
+        <duration yearStart="2011" yearEnd="2019">8</duration>
+        <genre>Fantasy drama</genre>
+        <seasons>8</seasons>
+        <createdBy>David Benioff</createdBy>
+        <createdBy>Daniel Brett Weiss</createdBy>
+        <character>Oberyn Martell</character>
+        <poster path="PPW\MEDIA\got.jpg"/>
+        <awards>
+            <award id="A1"/>
+            <award id="A2"/>
+            <award id="A3"/>
+            <award id="A4"/>
+            <award id="A6"/>
+            <award id="A8"/>
+        </awards>
+    </serie>
+    <serie id="S5">
+        <title>Buffy the Vampire Slayer</title>
+        <duration yearStart="1997" yearEnd="2003">6</duration>
+        <genre>Terror</genre>
+        <seasons>7</seasons>
+        <createdBy>Joss Whedon</createdBy>
+        <character>Eddie</character>
+        <poster path="PPW\MEDIA\buffy.jpg"/>
+    </serie>
+    <serie id="S6">
+        <title>The Mentalist</title>
+        <duration yearStart="2008" yearEnd="2015">7</duration>
+        <genre>Mistery</genre>
+        <seasons>7</seasons>
+        <createdBy>Bruno Heller</createdBy>
+        <character>agent Marcus Pike</character>
+        <poster path="PPW\MEDIA\thementalist.jpg"/>
+    </serie>
+    <serie id="S7">
+        <title>Graceland</title>
+        <duration yearStart="2013" yearEnd="2015">2</duration>
+        <genre>Drama</genre>
+        <seasons>3</seasons>
+        <createdBy>Jeff Eastin</createdBy>
+        <character>Juan Badillo</character>
+        <poster path="PPW\MEDIA\graceland.jpg"/>
+    </serie>
+    <serie id="S8">
+        <title>The Good Wife</title>
+        <duration yearStart="2009" yearEnd="2016">7</duration>
+        <genre>Drama</genre>
+        <seasons>7</seasons>
+        <createdBy>Robert King</createdBy>
+        <createdBy>Michelle King</createdBy>
+        <character>Nathan Landry</character>
+        <poster path="PPW\MEDIA\thegoodwife.jpg"/>
+    </serie>
+</series>
+</PedroPascal>
