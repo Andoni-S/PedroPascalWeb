@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PedroPascal>
+<PedroPascal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PedroPascal.xsd">
 <awards>
      <award id="A1">
         <name> Gold Derby Awards </name>
         <category> Drama Guest Actor</category>
         <year> 2014 </year>
         <production id="S4"> Game of Thrones </production>
-        <won/> 
+        <won/>  
     </award>
     <award id="A2">
         <name> NewNowNext Awards </name>
         <category> Best New Television Actor </category>
         <year> 2014 </year>
         <production id="S4"> Game of Thrones </production>
-
         <nominated/>
     </award>
      <award id="A3">
