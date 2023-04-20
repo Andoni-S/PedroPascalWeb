@@ -1,5 +1,5 @@
 <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema">
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:element name="PedroPascal">
         <xs:complexType>
             <xs:sequence>
@@ -16,11 +16,17 @@
                                             <xs:complexType>
                                                 <xs:simpleContent>
                                                     <xs:extension base="xs:string">
-                                                        <xs:attribute type="xs:string" name="id" use="optional" />
+                                                        <xs:attribute type="xs:string" name="id"
+                                                                      use="optional" />
                                                     </xs:extension>
                                                 </xs:simpleContent>
                                             </xs:complexType>
                                         </xs:element>
+                                        <xs:choice>
+                                            <xs:element name="won" type="xs:string" minOccurs="0" />
+                                            <xs:element name="nominated" type="xs:string"
+                                                        minOccurs="0" />
+                                        </xs:choice>
                                     </xs:sequence>
                                     <xs:attribute type="xs:string" name="id" use="optional" />
                                 </xs:complexType>
@@ -35,18 +41,49 @@
                                 <xs:complexType>
                                     <xs:sequence>
                                         <xs:element type="xs:string" name="title" />
-                                        <xs:element type="xs:string" name="genre" />
-                                        <xs:element type="xs:byte" name="seasons" />
-                                        <xs:element type="xs:string" name="character" />
-                                        <xs:element type="xs:string" name="createdBy" maxOccurs="unbounded" minOccurs="0" />
-                                        <xs:element name="awards">
+                                        <xs:element name="duration">
                                             <xs:complexType>
-                                                <xs:sequence>
-                                                </xs:sequence>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:string">
+                                                        <xs:attribute type="xs:short"
+                                                                      name="yearStart" use="optional" />
+                                                        <xs:attribute type="xs:short" name="yearEnd" use="optional" />
+                                                    </xs:extension>
+                                                </xs:simpleContent>
                                             </xs:complexType>
                                         </xs:element>
+                                        <xs:element type="xs:string" name="genre" />
+                                        <xs:element type="xs:byte" name="seasons" />                    
+                                        <xs:element type="xs:string" name="createdBy" maxOccurs="unbounded" minOccurs="0" />
+                                        <xs:element type="xs:string" name="character" />
+                                        <xs:element name="poster">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:string">
+                                                        <xs:attribute type="xs:string" name="path" use="optional"/>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="awards" minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="award" minOccurs="0" maxOccurs="unbounded">
+                                                        <xs:complexType>
+                                                            <xs:simpleContent>
+                                                                 <xs:extension base="xs:string">
+                                                                    <xs:attribute name="id" type="xs:string"/>
+                                                                 </xs:extension>                                          
+                                                            </xs:simpleContent>
+                                                            
+                                                        </xs:complexType>
+                                                
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType> 
+                                        </xs:element>
                                     </xs:sequence>
-                                    <xs:attribute type="xs:string" name="id" use="optional" />
+                                    <xs:attribute type="xs:string" name="id" use="required"/>
                                 </xs:complexType>
                             </xs:element>
                         </xs:sequence>
